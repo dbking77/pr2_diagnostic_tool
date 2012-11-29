@@ -9,6 +9,8 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/pr2_diagnostic_tool</url>
   <depend package="rospy"/>
+  <depend package="rqt_gui"/>
+  <depend package="rqt_gui_py"/>
   <depend package="pr2_controller_interface"/>
   <depend package="pr2_mechanism_model"/>
   <depend package="pr2_mechanism_msgs"/>
