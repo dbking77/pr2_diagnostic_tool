@@ -59,7 +59,7 @@ class Diagnostic():
     if debug_info: 
       print "outliers in filtered data", outliers_neg, outliers_pos
 
-    if (len(outliers_neg) + len(outliers_pos)) >= 4:
+    if (len(outliers_neg) + len(outliers_pos)) > 4:
       print "Encoder could be spoilt for,", actuator_name
       return (True, outlier_limit_neg, outlier_limit_pos)
 
