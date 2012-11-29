@@ -1,0 +1,22 @@
+<package>
+  <description brief="pr2_diagnostic_tool">
+
+     pr2_diagnostic_tool
+
+  </description>
+  <author>Rahul Udasi</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pr2_diagnostic_tool</url>
+  <depend package="rospy"/>
+  <depend package="pr2_controller_interface"/>
+  <depend package="pr2_mechanism_model"/>
+  <depend package="pr2_mechanism_msgs"/>
+  <depend package="pluginlib"/>
+  <depend package="ethercat_hardware"/>
+  <export>
+      <rqt_gui plugin="${prefix}/plugin.xml" />
+  </export>
+</package>
+
+
