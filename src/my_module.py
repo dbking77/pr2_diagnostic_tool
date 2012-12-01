@@ -4,7 +4,6 @@ roslib.load_manifest('pr2_diagnostic_tool')
 import rospy
 
 from qt_gui.plugin import Plugin
-from python_qt_binding import loadUi
 from diagnostic_tool_widget import DiagnosticToolWidget
 
 class MyPlugin(Plugin):
@@ -28,8 +27,7 @@ class MyPlugin(Plugin):
 
     def shutdown_plugin(self):
         # TODO unregister all publishers here
-        pass
-
+        self._widget.close_all()
     def save_settings(self, plugin_settings, instance_settings):
         # TODO save intrinsic configuration, usually using:
         # instance_settings.set_value(k, v)
